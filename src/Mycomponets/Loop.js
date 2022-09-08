@@ -28,31 +28,28 @@ function Loop() {
         const strToNum = Number(userRow);
 
         if (!isNaN(strToNum)) {
-            for (let i = 1; i <= strToNum; i++) {
-                for (let j = i; j <= i; j++) {
-                    tempStr += userSign + ' '
+            for (let i = 1; i <= strToNum; i++) 
+            {
+                for (let j = i; j <= i; j++)
+                {
+                    tempStr += userSign + ' ';
                 }
                 temparr.push(tempStr);
-
                 setResult(temparr);
             }
-            getUserInput({userSign:'',userRow:''});
-        
-        } else {
-            alert('your pattern row must be Number');
-            getUserInput({userSign:'',userRow:''});
+       
+        } else 
+        {
+            alert('your pattern row must be Number');      
         }
-
-    }
+        getUserInput({userSign:'',userRow:''});
+    };
     return (
         <React.Fragment>
             <div className='Input_block'>
               <h4>Start Row count Game
-
-              Here you can create your pattern
-              </h4>
-
-            
+                   Here you can create your pattern
+              </h4>      
                 <div>
                     <input type='text' placeholder='Your Sign' name='userSign' onChange={handleChange} value={userInput.userSign} />
                 </div>
@@ -62,10 +59,8 @@ function Loop() {
                 <div>
               <button type='button' onClick={handleSubmit}>submit</button>
                 </div>
-  
-            </div>
-           
 
+            </div>
             <div>
                 <h4>Your pattern</h4>
                 <div>
