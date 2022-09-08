@@ -28,11 +28,12 @@ function Loop() {
         const strToNum = Number(userRow);
 
         if (!isNaN(strToNum)) {
-            for (let i = 0; i <= strToNum; i++) {
+            for (let i = 1; i <= strToNum; i++) {
                 for (let j = i; j <= i; j++) {
                     tempStr += userSign + ' '
                 }
-                temparr.push(tempStr)
+                temparr.push(tempStr);
+
                 setResult(temparr);
             }
             getUserInput({userSign:'',userRow:''});
