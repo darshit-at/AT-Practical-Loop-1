@@ -10,6 +10,7 @@ overflow-x: hidden;
 .Input_block {
     background: rgb(161, 156, 156);
     width: 400px;
+    text-align: center;
     padding: 20px 40px; 
     margin-top: 60px;
     color: white;
