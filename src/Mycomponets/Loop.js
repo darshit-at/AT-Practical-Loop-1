@@ -26,7 +26,7 @@ function Loop() {
         let temparr = [];
         const { userSign, userRow } = userInput;
         const strToNum = Number(userRow);
-
+      if(userSign!==''){
         if (!isNaN(strToNum)) {
             for (let i = 1; i <= strToNum; i++) 
             {
@@ -38,10 +38,16 @@ function Loop() {
                 setResult(temparr);
             }
        
-        } else 
+        }
+        else 
         {
             alert('your pattern row must be Number');      
         }
+      }
+      else{
+        alert('Please Enter any sign');
+      }
+    
         getUserInput({userSign:'',userRow:''});
     };
     return (

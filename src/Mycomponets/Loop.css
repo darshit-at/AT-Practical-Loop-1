@@ -19,17 +19,18 @@ overflow-x: hidden;
 }
 .Input_block div input{
     padding: 7px 20px;
+    width: 200px;
     margin: 9px 0px;
 }
 .Input_block div button{
-    padding: 7px 30px;
+    padding: 7px 40px;
     color: white;
     border: 0px;
-    background: rgb(133, 157, 161);
-    transition: all 0.45s ease-in-out;
+    background:black;
+    transition: all 0.25s ease-in-out;
 }
 
 .Input_block div button:hover {
-background: transparent;
+
 border: 3px solid white;
 }
