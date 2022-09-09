@@ -25,8 +25,13 @@ function Loop() {
         let tempStr = '';
         let temparr = [];
         const { userSign, userRow } = userInput;
-        const strToNum = Number(userRow);
-      if(userSign!==''){
+        const strToNum = parseInt(userRow);
+      if(userSign===''){
+        alert('Please Enter any sign');
+       
+      }
+      else{
+
         if (!isNaN(strToNum)) {
             for (let i = 1; i <= strToNum; i++) 
             {
@@ -43,9 +48,6 @@ function Loop() {
         {
             alert('your pattern row must be Number');      
         }
-      }
-      else{
-        alert('Please Enter any sign');
       }
     
         getUserInput({userSign:'',userRow:''});
